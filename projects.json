@@ -1,0 +1,111 @@
+[
+  {
+    "id": "stardew",
+    "name": "Stardew Valley Analytics Lab",
+    "category": "Data Analytics",
+    "status": "Public source \u00b7 synthetic demo",
+    "stack": [
+      "Python",
+      "pandas",
+      "SQLite",
+      "Streamlit"
+    ],
+    "problem": "Make game-save data understandable without inventing a player history.",
+    "description": "Read-only XML extraction, farm economy and player activity metrics, snapshot comparison, and visible data-quality checks. The public app runs on clearly labeled synthetic fixtures; real saves stay private.",
+    "role": "I defined the analysis questions, requirements and presentation direction, then reviewed outputs. Codex implemented the code and ran automated checks.",
+    "limit": "Snapshot differences are not retention, cohort, LTV or complete event logs. Dashboard runs locally; no hosted app is claimed.",
+    "github": "https://github.com/kolista22/Stardew-Valley-Analytics-Lab",
+    "caption": "Actual local dashboard \u00b7 synthetic fixture mode"
+  },
+  {
+    "id": "hotel",
+    "name": "Hotel Supply Analytics",
+    "category": "Data Analytics",
+    "status": "Public source \u00b7 local dashboard",
+    "stack": [
+      "Python",
+      "pandas",
+      "SQLite",
+      "Streamlit"
+    ],
+    "problem": "Compare bookings and cancellations with consistent, explainable metrics.",
+    "description": "Historical hotel-booking analysis with SQL JOINs and CTEs, missing-value checks, year filters, group comparisons and monthly trends.",
+    "role": "I set the business questions, reviewed the dashboard, requested chart and comparison fixes, and completed browser acceptance. Codex implemented and tested the code.",
+    "limit": "Supply groups are synthetic labels; ADR-based amounts are value proxies, not audited revenue. Data: Antonio, de Almeida & Nunes (2019), CC BY 4.0.",
+    "github": "https://github.com/kolista22/Hotel-Supply-Analytics",
+    "caption": "Actual local dashboard \u00b7 public historical data"
+  },
+  {
+    "id": "strategy",
+    "name": "Strategy Pulse",
+    "category": "Web Development",
+    "status": "Public source \u00b7 local-first MVP",
+    "stack": [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "localStorage"
+    ],
+    "problem": "Track strategic goals without hiding whether changes were actually saved.",
+    "description": "Create goals, update progress, calculate an equal-weight overall score and restore data after refresh. Includes confirmed reset, save-failure feedback and lightweight multi-tab conflict detection.",
+    "role": "I chose the product scope and persistence-safety decisions, rejected unnecessary synchronization complexity, and completed browser acceptance. Codex implemented and tested the changes.",
+    "limit": "No backend, cloud sync or Azure deployment. Conflict detection reduces known stale writes; it is not atomic multi-tab synchronization.",
+    "github": "https://github.com/kolista22/Strategy-Pulse",
+    "caption": "Actual local goal-tracker screenshot"
+  },
+  {
+    "id": "screening",
+    "name": "ScreeningFlow Lite",
+    "category": "Web Development",
+    "status": "Local MVP \u00b7 source not published",
+    "stack": [
+      "React",
+      "Vite",
+      "Flask",
+      "PostgreSQL",
+      "pytest"
+    ],
+    "problem": "Explore a clear registration workflow from browser form to relational storage.",
+    "description": "A fictional registration form and admin workspace with REST endpoints, server-side validation, status updates, PostgreSQL persistence and forward-only migrations.",
+    "role": "I defined the concept, feature requirements, technology scope and acceptance criteria. Codex implemented the application and executed API, database and browser verification.",
+    "limit": "Fictional demo codes only. No real health data, employer affiliation or public deployment. The unauthenticated admin interface is local-only.",
+    "github": null,
+    "caption": "Actual local MVP \u00b7 fictional registration data"
+  },
+  {
+    "id": "feng",
+    "name": "Feng Shui Lab",
+    "category": "Web Development",
+    "status": "Four-room local MVP \u00b7 older demo",
+    "stack": [
+      "JavaScript",
+      "SVG",
+      "CSS",
+      "localStorage"
+    ],
+    "problem": "Make room-layout experimentation direct, playful and explainable.",
+    "description": "Bedroom, Living Room, Kitchen and Bathroom layouts with structure locking, draggable furniture, rotation, collision checks, deterministic scoring, explanations and local saves.",
+    "role": "My product concept: I directed features, interactions and UX, tested the application and guided iteration. Codex assisted with implementation; I do not claim sole authorship.",
+    "limit": "The four-room version is local. An older public demo exists, but access could not be verified in this audit, so it is not linked. Scores are entertainment heuristics, not AI or scientific predictions.",
+    "github": null,
+    "caption": "Actual local four-room version \u00b7 Bedroom view"
+  },
+  {
+    "id": "wardrobe",
+    "name": "Lucky Color Wardrobe",
+    "category": "AI Applications",
+    "status": "Local prototype \u00b7 mock preview",
+    "stack": [
+      "TypeScript",
+      "React",
+      "Vite",
+      "Node API"
+    ],
+    "problem": "Turn a deterministic palette and outfit brief into a visual styling workflow.",
+    "description": "A local styling interface combines rule-derived color suggestions, preferences and an API workflow. The verified free preview produces a clearly labeled schematic illustration.",
+    "role": "An AI-assisted implementation. The individual product and code-review contribution record is incomplete, so no independent coding, debugging or authorship claim is made.",
+    "limit": "The screenshot is mock mode, not an AI photograph. A paid image-provider path exists in code but live paid generation and public deployment are not claimed. Some experimental modules are not connected to the UI.",
+    "github": null,
+    "caption": "Actual local mock preview \u00b7 schematic, not AI imagery"
+  }
+]
